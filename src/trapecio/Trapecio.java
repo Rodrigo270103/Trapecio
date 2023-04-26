@@ -29,13 +29,30 @@ public class Trapecio {
 		System.out.println(" - - - - - - - - - - - -");
 		System.out.println(" - Método del trapecio -");
 		System.out.println(" - - - - - - - - - - - -");
-		System.out.println("Función a evaluar : " + args[0]);
-		System.out.println("Límite inferior : " + args[1]);
-		System.out.println("Límite superior : " + args[2]);
+		//System.out.println("Función a evaluar : " + args[0]);
+		//System.out.println("Límite inferior : " + args[1]);
+		//System.out.println("Límite superior : " + args[2]);
 	
 		long end = System.nanoTime();
 	
 		//Mostrando el tiempo total de la ejecución del programa
 		System.out.println("\n" + "TIEMPO TOTAL DE EJECUCIÓN : " + (end-start) + " ns.");
+		
+		Scanner input = new Scanner(System.in);
+
+	      System.out.print("Ingrese la longitud de la base mayor: ");
+	      double baseMayor = input.nextDouble();
+
+	      System.out.print("Ingrese la longitud de la base menor: ");
+	      double baseMenor = input.nextDouble();
+
+	      System.out.print("Ingrese la altura del trapecio: ");
+	      double altura = input.nextDouble();
+
+	      double area = (baseMayor + baseMenor) * altura / 2;
+
+	      System.out.println("El área del trapecio es: " + area);
+	   }
+	}
   }
 }
