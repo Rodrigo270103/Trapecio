@@ -25,6 +25,8 @@ public class expresiones {
 		System.out.println("Digite el limite inferor");
 		limite_inferior = input.nextDouble();
 		
+		double calcular_area = ((e.setVariable("x", limite_superior).evaluate()+ e.setVariable("x", limite_inferior).evaluate() * (limite_inferior - limite_superior)) /2 ;
+		System.out.println("\nArea: " + calcular_area);
 		
 	}
 }
