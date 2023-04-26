@@ -15,6 +15,13 @@ package trapecio;
 
 public class Trapecio {
 	
+	String funcion;
+	int base_menor;
+	int base_mayor;
+	int altura;
+	
+	
+	
 	public static void main(String args[]) {
 
 		long start = System.nanoTime();
