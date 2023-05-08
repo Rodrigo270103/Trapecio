@@ -34,7 +34,10 @@ public class Trapecio {
         System.out.println("Ingrese el límite superior:");
         double b = sc.nextDouble();
         
-        
+        final double ERROR_TOLERADO = 0.0001;
+        double areaAnterior = 0.0;
+        double areaActual = 0.0;
+        int n = 1;
 	   }
 	}
  
