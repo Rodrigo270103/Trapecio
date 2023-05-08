@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author Laboratorio
- *
- */
-module Trapecio {
-}

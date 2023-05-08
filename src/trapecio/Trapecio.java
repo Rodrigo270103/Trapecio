@@ -11,48 +11,24 @@ package trapecio;
 	 * input 02         :Limite Inferior. Tipo: int. Ejemplo: 5
 	 * Input 03         :Limite superior. Tipo: in. Ejemplo: 10
 	 */
-
+import net.objecthunter.exp4j.*;
+import java.util.Scanner;
 
 public class Trapecio {
 	
-	String funcion;
-	int base_menor;
-	int base_mayor;
-	int altura;
-	
-	
-	
 	public static void main(String args[]) {
 
-		long start = System.nanoTime();
-	
 		System.out.println(" - - - - - - - - - - - -");
 		System.out.println(" - Método del trapecio -");
 		System.out.println(" - - - - - - - - - - - -");
-		//System.out.println("Función a evaluar : " + args[0]);
-		//System.out.println("Límite inferior : " + args[1]);
-		//System.out.println("Límite superior : " + args[2]);
-	
-		long end = System.nanoTime();
-	
-		//Mostrando el tiempo total de la ejecución del programa
-		System.out.println("\n" + "TIEMPO TOTAL DE EJECUCIÓN : " + (end-start) + " ns.");
 		
-		Scanner input = new Scanner(System.in);
-
-	      System.out.print("Ingrese la longitud de la base mayor: ");
-	      double baseMayor = input.nextDouble();
-
-	      System.out.print("Ingrese la longitud de la base menor: ");
-	      double baseMenor = input.nextDouble();
-
-	      System.out.print("Ingrese la altura del trapecio: ");
-	      double altura = input.nextDouble();
-
-	      double area = (baseMayor + baseMenor) * altura / 2;
-
-	      System.out.println("El área del trapecio es: " + area);
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Ingrese una ecuacion: ");
+		String ecuacionStr = sc.nextLine();
+		Expression ecuacion = new ExpressionBuilder(ecuacionStr).variables("x").build();
+		
+		
 	   }
 	}
-  }
-}
+ 
