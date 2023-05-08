@@ -38,6 +38,27 @@ public class Trapecio {
         double areaAnterior = 0.0;
         double areaActual = 0.0;
         int n = 1;
+        
+        while (true) {
+            double h = (b - a) / n;
+            areaActual = (ecuacion.setVariable("x", a).evaluate() + ecuacion.setVariable("x", b).evaluate()) / 2;
+            for (int i = 1; i < n; i++) {
+                double xi = a + i * h;
+                areaActual += ecuacion.setVariable("x", xi).evaluate();
+            }
+            areaActual *= h;
+            
+            if (n > 1 && Math.abs(areaActual - areaAnterior) < ERROR_TOLERADO) {
+                break;
+            }
+            
+            areaAnterior = areaActual;
+            n++;
+        }
+        
+        
+        System.out.println("El área aproximada bajo la curva es: " + areaActual);
+        System.out.println("Se necesitaron " + n + " trapecios para alcanzar el error tolerado.");
 	   }
 	}
  

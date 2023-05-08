@@ -100,7 +100,7 @@ public abstract class Operators {
                 return BUILT_IN_OPERATORS[INDEX_UNARY_MINUS];
             case '*':
                 return BUILT_IN_OPERATORS[INDEX_MULTIPLICATION];
-            case '÷':
+            
             case '/':
                 return BUILT_IN_OPERATORS[INDEX_DIVISION];
             case '^':
