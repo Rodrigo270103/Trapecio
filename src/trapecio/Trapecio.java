@@ -28,7 +28,13 @@ public class Trapecio {
 		String ecuacionStr = sc.nextLine();
 		Expression ecuacion = new ExpressionBuilder(ecuacionStr).variables("x").build();
 		
+		System.out.println("Ingrese el límite inferior:");
+        double a = sc.nextDouble();
 		
+        System.out.println("Ingrese el límite superior:");
+        double b = sc.nextDouble();
+        
+        
 	   }
 	}
  
