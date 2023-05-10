@@ -1,11 +1,7 @@
-/*
- * Class                :Trapecio.java
- * Description          :Calcular el metodo del trapecio con programacion paralela y secuencial
- * Author               :Rodrigo Ojeda Arce
- * Course               :Lenguaje a la programacion 3
- * Editor               :Eclipse
- */
-package trapecio;
+//package packageTrapecio;
+//package packageTrapecio;
+
+
 	/*
 	 * Input 01         :Funcion Evaluar. Tipo: String. Ejemplo: "2x^2+1"
 	 * input 02         :Limite Inferior. Tipo: int. Ejemplo: 5
@@ -19,7 +15,7 @@ public class Trapecio {
 	public static void main(String args[]) {
 
 		System.out.println(" - - - - - - - - - - - -");
-		System.out.println(" - Método del trapecio -");
+		System.out.println(" - Metodo del trapecio -");
 		System.out.println(" - - - - - - - - - - - -");
 		
 		Scanner sc = new Scanner(System.in);
@@ -28,10 +24,10 @@ public class Trapecio {
 		String ecuacionStr = sc.nextLine();
 		Expression ecuacion = new ExpressionBuilder(ecuacionStr).variables("x").build();
 		
-		System.out.println("Ingrese el límite inferior:");
+		System.out.println("Ingrese el limite inferior:");
         double a = sc.nextDouble();
 		
-        System.out.println("Ingrese el límite superior:");
+        System.out.println("Ingrese el limite superior:");
         double b = sc.nextDouble();
         
         final double ERROR_TOLERADO = 0.0001;
@@ -57,8 +53,10 @@ public class Trapecio {
         }
         
         
-        System.out.println("El área aproximada bajo la curva es: " + areaActual);
+        System.out.println("El area aproximada bajo la curva es: " + areaActual);
         System.out.println("Se necesitaron " + n + " trapecios para alcanzar el error tolerado.");
 	   }
 	}
  
+
+
