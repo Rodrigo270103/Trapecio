@@ -1,4 +1,4 @@
-package packageTrapecio;
+package TrapecioSecuencial;
 //package packageTrapecio;
 
 

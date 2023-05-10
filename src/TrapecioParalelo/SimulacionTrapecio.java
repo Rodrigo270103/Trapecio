@@ -1,4 +1,4 @@
-package SimulacionTrapecio;
+package TrapecioParalelo;
 
 
 public class SimulacionTrapecio {

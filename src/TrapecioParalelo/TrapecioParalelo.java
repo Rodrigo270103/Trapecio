@@ -1,4 +1,4 @@
-package SimulacionTrapecio;
+package TrapecioParalelo;
 
 import java.util.Scanner;
 
